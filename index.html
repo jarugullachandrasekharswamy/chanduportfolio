@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jarugulla Chandra Sekhar Swamy — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<div class="noise"></div>
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">JCS</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Available for Opportunities</div>
+    <h1 class="hero-name">
+      <span class="line1">Jarugulla</span>
+      <span class="line2">Chandra</span>
+      <span class="line3">Sekhar</span>
+    </h1>
+    <p class="hero-subtitle">
+      <span>CSE Student @ LPU</span> — Cybersecurity Enthusiast,
+      Web Developer &amp; Data Analyst building at the intersection of
+      security and software.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+        Get In Touch
+      </a>
+      <a href="#projects" class="btn-outline">View Projects →</a>
+      <a href="https://drive.google.com/file/d/1pcgGdXsuLVvhX8M_J_nFCopO2_E0Xxv_/view?usp=sharing" class="btn-outline" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        View CV
+      </a>
+    </div>
+    <div class="hero-social">
+      <a href="https://linkedin.com/in/JarugullaChandrasekharswamy" class="social-link" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/jarugullachandrasekharswamy" class="social-link" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="mailto:jchandrasekharswamy3232@gmail.com" class="social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+    </div>
+  </div>
+  <div class="hero-photo" id="hero-photo">
+    <div class="photo-ring photo-ring-1"></div>
+    <div class="photo-ring photo-ring-2"></div>
+    <div class="photo-ring photo-ring-3"></div>
+    <div class="photo-glow"></div>
+    <div class="photo-dots" id="photo-dots"></div>
+    <img src="profile.jpg" alt="Jarugulla Chandra Sekhar Swamy" class="profile-img" />
+  </div>
+  <div class="scroll-ind"><div class="scroll-line"></div>Scroll to explore</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-num">01 — SKILLS</div>
+      <h2 class="sec-title">Technical <span class="accent">Arsenal</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon">⟨/⟩</div>
+        <div class="skill-card-label">Languages</div>
+        <div class="skill-card-title">Programming</div>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon">🛡️</div>
+        <div class="skill-card-label">Frameworks & Tools</div>
+        <div class="skill-card-title">Cybersecurity</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux</span><span class="skill-tag">Nmap</span><span class="skill-tag">Burp Suite</span><span class="skill-tag">Wireshark</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-card-icon">⚙️</div>
+        <div class="skill-card-label">Tools & Platforms</div>
+        <div class="skill-card-title">Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span><span class="skill-tag">MySQL</span><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">VMware</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-4">
+        <div class="skill-card-icon">🧠</div>
+        <div class="skill-card-label">Core CS</div>
+        <div class="skill-card-title">Fundamentals</div>
+        <div class="skill-tags">
+          <span class="skill-tag">DBMS</span><span class="skill-tag">Networks</span><span class="skill-tag">SQL</span><span class="skill-tag">OOPs</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon">🤝</div>
+        <div class="skill-card-label">Soft Skills</div>
+        <div class="skill-card-title">Professional</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Leadership</span><span class="skill-tag">Adaptability</span><span class="skill-tag">Time Mgmt</span><span class="skill-tag">Quick Learner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-num">02 — PROJECTS</div>
+      <h2 class="sec-title">Built <span class="accent">Things</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-period">JAN 2025 — FEB 2025</div>
+        <h3 class="project-title">Spa Salon Booking Appointment</h3>
+        <ul class="project-points">
+          <li>Developed a user-friendly web platform that allows customers to easily book spa and salon appointments online.</li>
+          <li>Created using HTML, CSS, and JavaScript to build responsive pages, validate forms, and booking feature with AI integration.</li>
+          <li>Delivered a functional booking interface that improves customer convenience and streamlines the appointment scheduling process.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="stack-badge">HTML</span><span class="stack-badge">CSS</span><span class="stack-badge">JavaScript</span><span class="stack-badge">AI Integration</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/jarugullachandrasekharswamy/Spa-Salon-Booking-Appointment" class="project-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-period">NOV 2024 — DEC 2024</div>
+        <h3 class="project-title">Sales of Fertilizer Analysis</h3>
+        <ul class="project-points">
+          <li>Analyzed fertilizer sales data and derived insights by processing and visualizing the dataset using Python.</li>
+          <li>Utilized Python (Pandas, NumPy, Matplotlib) in IDLE for data cleaning, analysis, and generating visual plots.</li>
+          <li>Produced meaningful insights and visual reports that highlight sales patterns and trends in the fertilizer data.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span><span class="stack-badge">Pandas</span><span class="stack-badge">NumPy</span><span class="stack-badge">Matplotlib</span><span class="stack-badge">Data Analysis</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/jarugullachandrasekharswamy/Sales-of-Fertilizer-" class="project-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINING -->
+<section id="training">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-num">03 — TRAINING</div>
+      <h2 class="sec-title">Industry <span class="accent">Experience</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="training-card reveal">
+      <div>
+        <div class="training-org">TATA</div>
+        <div class="training-period">NOV 2025</div>
+      </div>
+      <div>
+        <h3 class="training-title">Cybersecurity Analyst Virtual Experience Program</h3>
+        <ul class="training-points">
+          <li>Completed a virtual cybersecurity job simulation focused on SOC operations, log analysis, threat detection, and incident investigation in a realistic enterprise environment.</li>
+          <li>Analyzed system and security logs to identify suspicious activity, detect anomalies, and support incident response decision-making.</li>
+          <li>Prepared incident summary reports and practiced alert triaging workflows aligned with real SOC procedures.</li>
+          <li>Gained hands-on experience identifying vulnerabilities and understanding real-world cybersecurity response strategies.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="stack-badge">Log Analysis</span><span class="stack-badge">Threat Detection</span><span class="stack-badge">SIEM Basics</span><span class="stack-badge">Incident Reporting</span><span class="stack-badge">Cybersecurity Fundamentals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-num">04 — CERTIFICATES</div>
+      <h2 class="sec-title">Proven <span class="accent">Learning</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="certs-grid">
+      <a href="https://drive.google.com/file/d/1sgKugWk2910lyrUKfELPfDYXh7iuCJ7-/view?pli=1" class="cert-card reveal reveal-delay-1" data-num="01" target="_blank">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-issuer">Generative AI</div>
+        <div class="cert-name">Master Generative AI Tools</div>
+        <div class="cert-date">NOV 2025</div>
+        <div class="cert-view">View Certificate →</div>
+      </a>
+      <a href="https://www.coursera.org/account/accomplishments/verify/7E9JCM4AKJC0?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="cert-card reveal reveal-delay-2" data-num="02" target="_blank">
+        <div class="cert-icon">🌐</div>
+        <div class="cert-issuer">Infosys Springboard</div>
+        <div class="cert-name">Fundamentals of Network Communication</div>
+        <div class="cert-date">AUG 2025</div>
+        <div class="cert-view">View Certificate →</div>
+      </a>
+      <a href="https://www.coursera.org/account/accomplishments/verify/71Z4NO477JWM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="cert-card reveal reveal-delay-3" data-num="03" target="_blank">
+        <div class="cert-icon">💻</div>
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-name">Introduction to Hardware and Operating Systems</div>
+        <div class="cert-date">SEP 2024</div>
+        <div class="cert-view">View Certificate →</div>
+      </a>
+      <a href="https://www.freecodecamp.org/certification/fcca6b83f01-727a-437d-b24d-3a741e8a92b5/responsive-web-design" class="cert-card reveal reveal-delay-4" data-num="04" target="_blank">
+        <div class="cert-icon">📱</div>
+        <div class="cert-issuer">FreeCodeCamp</div>
+        <div class="cert-name">Responsive Web Design</div>
+        <div class="cert-date">OCT 2023</div>
+        <div class="cert-view">View Certificate →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-num">05 — ACHIEVEMENTS</div>
+      <h2 class="sec-title">Recognition <span class="accent">&amp; Awards</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal reveal-delay-1">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Top 5 Ranking among 250 participants in the HackEthics Ethical Hacking Workshop</div>
+          <div class="achievement-date">OCT 2025</div>
+        </div>
+      </div>
+      <div class="achievement-card reveal reveal-delay-2">
+        <div class="achievement-icon">⭐</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Earned a 5-Star Badge on HackerRank in Python for consistent performance</div>
+          <div class="achievement-date">OCT 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-num">06 — EDUCATION</div>
+      <h2 class="sec-title">Academic <span class="accent">Journey</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="edu-timeline">
+      <div class="edu-item reveal reveal-delay-1">
+        <div class="edu-period">AUG 2023 — PRESENT</div>
+        <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+        <div class="edu-school">Lovely Professional University</div>
+        <div class="edu-location">Phagwara, Punjab</div>
+        <span class="edu-grade">CGPA: 6.19</span>
+      </div>
+      <div class="edu-item reveal reveal-delay-2">
+        <div class="edu-period">JUN 2021 — JUL 2023</div>
+        <div class="edu-degree">Intermediate</div>
+        <div class="edu-school">Narayana College</div>
+        <div class="edu-location">Vizianagaram, Andhra Pradesh</div>
+        <span class="edu-grade">70.8%</span>
+      </div>
+      <div class="edu-item reveal reveal-delay-3">
+        <div class="edu-period">APR 2020 — JUN 2021</div>
+        <div class="edu-degree">Matriculation (Class X)</div>
+        <div class="edu-school">Sri Chaitanya School</div>
+        <div class="edu-location">Vizianagaram, Andhra Pradesh</div>
+        <span class="edu-grade">CGPA: 10.0</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="sec-num">07 — CONTACT</div>
+        <h2 class="contact-headline">
+          <span class="yellow">Let's</span><br>
+          <span class="outline">Build</span><br>
+          <span class="yellow">Together</span>
+        </h2>
+        <p class="contact-sub">Open to internships, collaborations, and full-time opportunities in cybersecurity and web development. Feel free to reach out!</p>
+      </div>
+      <div class="contact-links reveal reveal-delay-2">
+        <a href="mailto:jchandrasekharswamy3232@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉️</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value">jchandrasekharswamy3232@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/JarugullaChandrasekharswamy" class="contact-link" target="_blank">
+          <div class="contact-link-icon">💼</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-value">linkedin/JarugullaChandrasekharswamy</div>
+          </div>
+        </a>
+        <a href="https://github.com/jarugullachandrasekharswamy" class="contact-link" target="_blank">
+          <div class="contact-link-icon">🐙</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-value">github/jarugullachandrasekharswamy</div>
+          </div>
+        </a>
+        <a href="tel:+919346762205" class="contact-link">
+          <div class="contact-link-icon">📱</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">Mobile</div>
+            <div class="contact-link-value">+91-9346762205</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">JCS — PORTFOLIO</div>
+  <div class="footer-copy">© 2025 Jarugulla Chandra Sekhar Swamy. All rights reserved.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
