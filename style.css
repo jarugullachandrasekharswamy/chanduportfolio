@@ -520,16 +520,17 @@ footer {
   /* Hero Photo — show below hero text on mobile */
   .hero-photo {
     position: relative; right: auto; top: auto; transform: none;
-    width: 220px; height: 220px;
-    margin: 48px auto 0;
+    width: 200px; height: 200px;
+    margin: 24px auto 0;
     z-index: 1;
+    overflow: hidden;
   }
-  .hero-social { justify-content: center; position: relative; z-index: 5; margin-bottom: 16px; }
-  .profile-img { width: 160px; height: 160px; }
-  .photo-ring-1 { width: 190px; height: 190px; }
-  .photo-ring-2 { width: 210px; height: 210px; }
-  .photo-ring-3 { width: 230px; height: 230px; }
-  .photo-glow { width: 140px; height: 140px; }
+  .hero-social { justify-content: center; position: relative; z-index: 5; margin-bottom: 8px; }
+  .profile-img { width: 150px; height: 150px; }
+  .photo-ring-1 { width: 175px; height: 175px; }
+  .photo-ring-2 { width: 190px; height: 190px; }
+  .photo-ring-3 { width: 200px; height: 200px; }
+  .photo-glow { width: 130px; height: 130px; }
 
   /* Sections */
   .container { padding: 60px 20px; }
